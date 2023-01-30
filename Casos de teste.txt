@@ -1,0 +1,54 @@
+Testes para o arquivo Vetor Trabalho:
+
+tamanho: 3
+
+preco: 10.15
+nome: c
+
+preco 15.87
+nome: e
+
+preco: 17895.54
+nome: j
+
+tamanho: 2
+
+preco: 1
+nome: i
+
+preco: 45.8723
+nome: r
+
+Respostas
+
+1- c 10.15
+2- e 15.87
+3- j 17895.54
+
+1- 1.00 i
+2- 45.87 r
+
+
+Testes para arquivo Pilha Trabalho (sem testes)
+
+Adicione o chocolate a pilha 1: a
+Adicione o chocolate a pilha 2: b
+Adicione o chocolate a pilha 3: e
+Adicione o chocolate a pilha 4: q
+Adicione o chocolate a pilha 5: q
+Adicione o chocolate a pilha 6: e
+Adicione o chocolate a pilha 7: c
+Adicione o chocolate a pilha 8: w
+Adicione o chocolate a pilha 9: t
+Adicione o chocolate a pilha 10: o
+
+O chocolate removido foi: o
+O chocolate removido foi: t
+O chocolate removido foi: w
+O chocolate removido foi: c
+O chocolate removido foi: e
+O chocolate removido foi: q
+O chocolate removido foi: q
+O chocolate removido foi: e
+O chocolate removido foi: b
+O chocolate removido foi: a

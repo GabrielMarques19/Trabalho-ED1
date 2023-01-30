@@ -1,0 +1,36 @@
+Nome: Gabriel Marques Tavares
+Matrícula: 11911bsi207
+
+Para o arquivo de Vetor Trabalho, criei uma estrutura para poder alocar “vetores” de diversos tipos dinamicamente fazendo uso do malloc.
+Nesta mesma estrutura criei variáveis inteiras para auxiliar na manipulação dos vetores, uma capacidade, outra para tamanho (e posição atual) e uma auxiliar (que também foi utilizada como posição atual em um momento, por praticidade).
+
+Após alocar espaço para estrutura, alocar espaço para os vetores, referenciar a posição atual e variável auxiliar como 0 e alocar definir o tamanho total do vetor por meio de uma função, criei uma função que irá desalocar os vetores e após os desalocar, liberar também a memória ocupada pela struct, porém esta função seria apenas utilizada no fim do programa. 
+
+Foram escritas, também, uma função para confirmar se o vetor está cheio, comparando sua posição atual a seu tamanho total e  outra para confirmar se está vazio, checando se sua posição atual está em 0.
+
+Em seguida, crio uma função para inserir um elemento de float e um de char, cada um em um respectivo vetor e ao o fazer, um vetor que recebe inteiros e é iniciado com o elemento 0, recebe o elemento 1 em sua primeira posição.]
+
+Crio uma função para mostrar o que se encontra nos vetores no momento, claro, sobre o critério de não estarem vazios e então sigo para testes utilizando a função main, onde, através de uma variável ponteiro para Cardápio, me utilizo da função crirar e aloco memória para fazer uso dos vetores, depois, utilizo a função inserir para inserir elementos, cada qual em um vetor específico que aloquei me utilizando de um ciclo for.
+
+Após isto, uso outro ciclo for para que me mostre o que foi alocado nos vetores na ordem em que os inseri e por fim, libero a memória utilizada com a função destrói.
+
+
+Para o arquivo Pilha Trabalho, defini uma variável estática que sempre terá o valor 10 utilizando o define, criei uma struct para possuir elementos necessários de uma pilha, que seria um vetor, que para este caso é de tipo char e uma variável do tipo inteiro chamada topo que irá controlar a posição do elemento na pilha.
+
+Para a função que cria minha pilha, a mantenho como de tipo void pois não preciso que me retorne algo, peço que seu argumento seja um ponteiro para o tipo Pilha que defini com a struct e inicio a variável topo com o valor -1 por meio de um ponteiro.
+
+Criei funções que, baseadas no valor do topo, julgariam se a pilha está cheia ou vazia, com a vazia checando se o valor atual é -1 e a cheia olhando se o valor se iguala ao tamanho máximo – 1.
+
+Para a função inserepl, peço que entre com uma pilha e um valor char a ser incluso na pilha, incremento o valor que está no topo, para que, em seguida, o valor do topo seja usado como posição do vetor de char da struct onde o elemento deve ser inserido.
+
+Já para a função removepl e utilizando da pilha criada e de uma variável livre, peço que a variável livre receba o valor atual da posição do vetor que é descriminada pelo topo e após isto, peço que seja decrementado em uma vez o valor da variável topo.
+
+Para a função destróipl, apenas peço que a variável topo receba o valor -1, fazendo que ela seja julgada como vazia
+
+Para os testes na função main, crio duas variáveis char que serão utilizadas, uma para enviar um valor à pilha e outra para receber o valor da pilha, duas variáveis inteiras para facilitação do uso de ciclos e melhor interface de testes e uma variável de ponteiro para pilha que seria utilizada nas funções de criação, inserção e remoção.
+
+A  inserção é feita pro um ciclo for que usa como critério a variável estática TAM e uma variável de inteiro, assim possibilitando que o ciclo peça que seja inserido no topo da pilha um valor em um char que é passado como argumento à função inserepl que recebe o char e uma pilha.
+
+A remoção é feita com um ciclo for idêntico ao da função de inserção, porém, se utiliza da função removepl que faz uso da pilha previamente criada e de outra variável char por onde é devolvido o valor do topo da pilha.
+
+Eu havia tentado criar as funções inserepl e removepl de forma que só iriam inserir um elemento na pilha ou remover um elemento se atendessem a condição de a pilha utilizada não estar cheia ou vazia, porém, as funções não executavam não importando como eu colocasse o parâmetro de condição. O código com a tentativa de me utilizar das condições está no arquivo Pilha Trabalho.
